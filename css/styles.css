@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+section {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+h1  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+}
+
+:root {
+  --banner-bg: #233665;
+  --color-accent-one: #EB2087;
+  --color-accent-two: #8ECFB9;
+}
+
+/*android potraiit adaptive screen*/
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
