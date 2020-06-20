@@ -4,19 +4,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600&display=swap');
 html {
     font-family: sans-serif;
-    background: var(--banner-bg);
+    /* background: var(--banner-bg); */
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
-/* section {
-    border-bottom: 1px solid white;
+
+body {
+  margin: auto;
+  padding: 0;
+}
+section {
+    /* border-bottom: 1px solid white; */
     padding: 1rem;
     height: 100vh;
     scroll-snap-align: start;
     text-align: center;
-    position: relative;
-} */
+    /* position: relative; */
+}
 /* h1  {
     position: absolute;
     top: 50%;
@@ -32,6 +37,8 @@ html {
   --banner-bg: #233665;
   --color-accent-one: #EB2087;
   --color-accent-two: #8ECFB9;
+  --primary: #ffffff;
+  --reel: rgba(142, 207, 185, 0.5);
 }
 
 
@@ -53,6 +60,8 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 0 auto;
+  position: sticky;
+  top: 0;
 }
 
 .links {
@@ -69,16 +78,85 @@ html {
 
 .links h2, img {
   margin: auto 0;
-  padding: 20px
+  padding: 17px
 }
 
-.side {
+section.connect {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: auto;
+}
+
+.children {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #f2f2f2;
-  text-align: center;
+  padding: 50px;
 }
 
+.creative, .some {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vh;
+  height: 100vh;
+  padding: inherit;
+}
+
+.creative {
+  background-color: var(--primary);
+  /* margin-right: 20px; */
+  /* margin-left: 20%; */
+  line-height: 85%;
+}
+
+.creative div {
+  /* margin-left: 90px; */
+  /* margin-right: 100px */
+}
+
+.creative h1 {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.creative p {
+  margin-right: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.some {
+  background-color: var(--color-accent-one);
+}
+
+.showreel {
+  height: 100vh;
+  background: var(--reel);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showreel h1 {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.started {
+  border: 2px solid var(--color-accent-two);
+  background: var(--primary);
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  margin-right: 19em;
+}
 /*android potraiit adaptive screen*/
 /* Portrait */
 @media screen
