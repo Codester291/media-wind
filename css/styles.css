@@ -83,10 +83,224 @@ section {
 
 section.connect {
   display: grid;
-  grid-template-columns: auto auto auto;
-  flex-wrap: wrap;
+  grid-template-columns: 50% 50%;
+  /* flex-wrap: wrap; */
   padding: 0;
   margin: auto;
+}
+
+section.showcase {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* flex-wrap: wrap; */
+  padding: 0;
+  margin: auto;
+}
+
+.brand-1, .brand-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vh;
+  height: 80vh;
+  padding: 4em;
+}
+
+.brand-1 h1{
+  /* background-color: var(--color-accent-one); */
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.brand-3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.brand-3 span{
+  margin-right: 5em;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+hr {
+  border-top: 1px solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  width: 60%;
+  margin-left: 5em;
+}
+
+.brand-1 p{
+  /* background-color: var(--color-accent-one); */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+.brand-2 h1{
+  /* background-color: var(--color-accent-two); */
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.brand-2 p{
+  /* background-color: var(--color-accent-one); */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.blog h1 {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-child {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.grid-child div{
+  width: 285px;
+  height: 283px;
+  background-color: #f2f2f2;
+}
+
+.grid-child h1 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.grid-child span {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-align: left;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: auto 0;
+  padding: 0;
+}
+
+.thing-1 {
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 70px;
+}
+
+.thing-1 div{
+  text-align: left;
+}
+
+.thing-1 h1{
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.thing-1 span{
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.send {
+  border: 2px solid var(--color-accent-two);
+  background: var(--primary);
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 8px 25px 10px 25px;
+}
+
+#text-input {
+  padding: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  border-style: none;
+  background: #f2f2f2;
+  text-align: left;
+}
+
+.thing-2 {
+  background-color: var(--banner-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  color: #fff;
+  padding: 20px;
+}
+
+.thing-2 div {
+  text-align: center;
+  line-height: 100%;
+  padding: 30px;
+}
+
+.thing-2 h4{
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.thing-2 p{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.thing-2 hr {
+  /* margin-right: 10em; */
+}
+
+.rule {
+  text-align: left;
+  border-top: 2px solid white;
+  width: 50%;
+  /* margin-left: 30px; */
+  line-height: 100%;
+  /* text-align: left; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mails {
+}
+
+.bottom {
+  line-height: 80%;
+}
+
+.object {
+  background-color: #D7E0DD;
+  padding: 10em;
 }
 
 .children {
@@ -111,11 +325,6 @@ section.connect {
   /* margin-right: 20px; */
   /* margin-left: 20%; */
   line-height: 85%;
-}
-
-.creative div {
-  /* margin-left: 90px; */
-  /* margin-right: 100px */
 }
 
 .creative h1 {
