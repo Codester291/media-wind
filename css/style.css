@@ -236,6 +236,13 @@ hr {
   padding: 8px 25px 10px 25px;
 }
 
+.send:hover {
+  background: var(--color-accent-two);
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.9s;
+}
+
 .text-input {
   padding: 18px;
   font-family: 'Montserrat', sans-serif;
@@ -366,6 +373,14 @@ hr {
   font-weight: 400;
   padding: 15px;
   margin-right: 19em;
+}
+
+.started:hover{
+  /* border: 2px solid var(--color-accent-two); */
+  background: var(--color-accent-two);
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.9s;
 }
 /*android potraiit adaptive screen*/
 /* Portrait */
