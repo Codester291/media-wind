@@ -8,18 +8,20 @@ html {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
   margin: auto;
   padding: 0;
+  scroll-behavior: smooth;
 }
 section {
     /* border-bottom: 1px solid white; */
     padding: 1rem;
     height: 100vh;
     scroll-snap-align: start;
-    text-align: center;
+    /* text-align: center; */
     /* position: relative; */
 }
 /* h1  {
@@ -53,9 +55,29 @@ section {
   background: var(--banner-bg);
 }
 
-/* img {
-  object-fit: cover;
-} */
+.container-2 {
+  height: 100vh;
+  grid-template-rows: 40% 60%
+}
+
+.container-2 div {
+  /* height: 50vh; */
+  display: grid;
+  place-items: center;
+  line-height: 85%;
+  color: #fff;
+}
+
+.container-2 div span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+}
+
+.container-2 div h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -74,6 +96,7 @@ section {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   color: #f2f2f2;
+  font-size: 14px;
 }
 
 .links h2, img {
@@ -123,7 +146,16 @@ section.showcase {
   margin-right: 5em;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
+  /* font-weight: 600; */
+  transition: 0.9s;
+}
+
+.brand-3 span:hover{
   font-weight: 600;
+  /* translate: 20px; */
+  color: #233665;
+  cursor: pointer;
+  transition: 0.9s;
 }
 
 hr {
@@ -234,6 +266,7 @@ hr {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding: 8px 25px 10px 25px;
+  transition: 0.9s;
 }
 
 .send:hover {
@@ -250,6 +283,7 @@ hr {
   border-style: none;
   background: #f2f2f2;
   text-align: left;
+  outline: none;
 }
 
 .thing-2 {
@@ -283,10 +317,6 @@ hr {
   text-align: left;
 }
 
-.thing-2 hr {
-  /* margin-right: 10em; */
-}
-
 .rule {
   text-align: left;
   border-top: 2px solid white;
@@ -299,8 +329,6 @@ hr {
   align-items: flex-start;
 }
 
-.mails {
-}
 
 .bottom {
   line-height: 80%;
@@ -309,6 +337,12 @@ hr {
 .object {
   background-color: #D7E0DD;
   padding: 10em;
+  transition: 0.9s;
+}
+
+.object:hover {
+  box-shadow: 0px 13px 13px #D7E0DD;
+  transition: 0.9s;
 }
 
 .children {
@@ -318,22 +352,33 @@ hr {
   padding: 50px;
 }
 
-.creative, .some {
+.connect {
+  display: flex;
+  flex-direction: row;
+}
+/* .creative, .some {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 100vh;
   height: 100vh;
   padding: inherit;
+} */
+
+.creative,.some {
+  background-color: var(--primary);
+  display: grid;
+  place-items: center;
 }
 
-.creative {
-  background-color: var(--primary);
-  /* margin-right: 20px; */
-  /* margin-left: 20%; */
-  line-height: 85%;
-}
+/* .creative div {
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+  
+} */
 
 .creative h1 {
   font-size: 36px;
@@ -341,14 +386,12 @@ hr {
   font-weight: 400;
 }
 
-.creative p {
-  margin-right: 80px;
+.creative p{
+  /* margin-right: 80px; */
+  /* margin-left: 20%; */
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-}
-
-.some {
-  background-color: var(--color-accent-one);
 }
 
 .showreel {
@@ -372,7 +415,9 @@ hr {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding: 15px;
-  margin-right: 19em;
+  align-self: start;
+  margin-right: 17em;
+  transition: 0.9s;
 }
 
 .started:hover{
